@@ -40,18 +40,20 @@
     <script src="./assets/js/scripts.js"></script>
   </head>
   <body>
+    <!-- Header -->
+    <header id="header" class="header"></header>
+    <script>
+      load('#header', './template/header.html');
+    </script>
+
     <div class="container">
-      <header id="header">
-        <script>
-          load('#header', './template/header.html');
-        </script>
-      </header>
+      <!-- Main -->
       <h1>Home Page</h1>
-      <footer id="footer">
-        <script>
-          load('#footer', './template/footer.html');
-        </script>
-      </footer>
+      <!-- Footer -->
+      <footer id="footer"></footer>
+      <script>
+        load('#footer', './template/footer.html');
+      </script>
     </div>
   </body>
 </html>
