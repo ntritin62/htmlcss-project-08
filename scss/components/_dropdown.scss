@@ -5,7 +5,7 @@
   width: min(1240px, 100%);
 
   padding-top: 54px;
-  // display: none;
+  display: none;
 
   &__inner {
     --inner-padding: 30px;
@@ -89,12 +89,13 @@
   }
 
   &__item {
-    &:hover .sub-menu {
+    &--active .sub-menu {
       display: grid;
     }
   }
 
-  &__item:hover > &__link {
+  &__item:hover > &__link,
+  &__item--active > &__link {
     font-weight: 500;
     color: #0071dc;
   }
